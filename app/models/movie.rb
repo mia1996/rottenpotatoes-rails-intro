@@ -9,7 +9,7 @@ class Movie < ActiveRecord::Base
     return self.where(rating: ratings)
   end
   # Part2 END
-
+  
   # Part3 BEGIN
   def self.with_ratings_sort(ratings, sort_by)
     return self.where(rating: ratings).order(sort_by)
